@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/global.css">
+
+    <!-- FONTES IMPORTADAS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <title>Criar Sala - Roquet.Q</title>
+</head>
+<body>
+    <div id="home" class="content">
+        <header>
+            <a href="/">
+                <img src="/images/logo.svg" alt="Roquet.Q Logo">
+            </a>
+        </header>
+
+        <div id="bg">
+            <div class="ball top"></div>
+            <div class="ball bottom"></div>
+        </div>
+
+        <main>
+            <div class="container">
+                <!-- VAI RENDERIZAR A PARTE CERTA DE ACORDO COM A URL -->
+                <%- include(`parts/${page}`) %>
+            </div>
+        </main>
+    </div>   
+</body>
+</html>
